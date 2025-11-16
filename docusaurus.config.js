@@ -17,16 +17,12 @@ const config = {
   favicon: 'img/logo.png',
 
   // Set the production url of your site here
-  url: 'https://educode58.github.io',
+  url: 'https://your-vercel-domain.vercel.app', // Update this with your actual Vercel domain
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/curs/',
+  // For Vercel deployment, this can be '/' or your preferred base path
+  baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'educode58', // Usually your GitHub org/user name.
-  projectName: 'curs', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
+  // GitHub pages deployment config removed for Vercel compatibility
   trailingSlash: false,
 
   onBrokenLinks: 'warn',
@@ -125,7 +121,7 @@ const config = {
               font-size: 0.9rem;
               font-family: sans-serif;
               cursor: pointer;
-            " onclick="window.location.href='/curs/docs/status';">
+            " onclick="window.location.href='/docs/status';">
               <svg viewBox="0 0 16 16" width="18" height="18" xmlns="http://www.w3.org/2000/svg" fill="#27ae60">
                 <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
               </svg>
@@ -145,7 +141,7 @@ const config = {
         //       font-size: 0.9rem;
         //       font-family: sans-serif;
         //       cursor: pointer;
-        //     " onclick="window.location.href='/curs/docs/status';">
+        //     " onclick="window.location.href='/docs/status';">
         //   <svg viewBox="0 0 16 16" width="18" height="18" xmlns="http://www.w3.org/2000/svg" fill="#f1c40f">
         //     <path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z" />
         //   </svg>
