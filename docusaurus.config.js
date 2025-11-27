@@ -103,7 +103,7 @@ const config = {
           type: 'html',
           position: 'right',
           value: `
-            <span style="font-size: 0.9rem; opacity: 0.7;">Ultima actualizare: 27.11.2025, 19:36</span>
+            <span style="font-size: 0.9rem; opacity: 0.7;">Ultima actualizare: 27.11.2025, 19:45</span>
           `,
         },
         {
