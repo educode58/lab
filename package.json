@@ -2,7 +2,7 @@
   "name": "edumat-58",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://educode58.github.io/curs",
+  "homepage": "https://educode58.github.io/lab",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",

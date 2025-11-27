@@ -17,12 +17,13 @@ const config = {
   favicon: 'img/logo.png',
 
   // Set the production url of your site here
-  url: 'https://your-vercel-domain.vercel.app', // Update this with your actual Vercel domain
+  url: 'https://educode58.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For Vercel deployment, this can be '/' or your preferred base path
-  baseUrl: '/',
+  baseUrl: '/lab',
 
-  // GitHub pages deployment config removed for Vercel compatibility
+  // GitHub pages deployment config
+  organizationName: 'educode58',
+  projectName: 'lab',
   trailingSlash: false,
 
   onBrokenLinks: 'warn',
@@ -102,7 +103,7 @@ const config = {
           type: 'html',
           position: 'right',
           value: `
-            <span style="font-size: 0.9rem; opacity: 0.7;">Ultima actualizare: 16.11.2025, 16:25</span>
+            <span style="font-size: 0.9rem; opacity: 0.7;">Ultima actualizare: 27.11.2025, 15:13</span>
           `,
         },
         {
