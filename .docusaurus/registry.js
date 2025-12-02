@@ -44,6 +44,7 @@ export default {
   "content---lab-blogf-4-f-9f0": [() => import(/* webpackChunkName: "content---lab-blogf-4-f-9f0" */ "@site/blog/2021-08-01-mdx-blog-post.mdx?truncated=true"), "@site/blog/2021-08-01-mdx-blog-post.mdx?truncated=true", require.resolveWeak("@site/blog/2021-08-01-mdx-blog-post.mdx?truncated=true")],
   "content---lab-docs-introf-84-02e": [() => import(/* webpackChunkName: "content---lab-docs-introf-84-02e" */ "@site/docs/intro.mdx"), "@site/docs/intro.mdx", require.resolveWeak("@site/docs/intro.mdx")],
   "content---lab-docs-lab-04608-323": [() => import(/* webpackChunkName: "content---lab-docs-lab-04608-323" */ "@site/docs/Lab/04.mdx"), "@site/docs/Lab/04.mdx", require.resolveWeak("@site/docs/Lab/04.mdx")],
+  "content---lab-docs-lab-05083-780": [() => import(/* webpackChunkName: "content---lab-docs-lab-05083-780" */ "@site/docs/Lab/05.mdx"), "@site/docs/Lab/05.mdx", require.resolveWeak("@site/docs/Lab/05.mdx")],
   "content---lab-docs-lab-1520-08c": [() => import(/* webpackChunkName: "content---lab-docs-lab-1520-08c" */ "@site/docs/Lab/01.mdx"), "@site/docs/Lab/01.mdx", require.resolveWeak("@site/docs/Lab/01.mdx")],
   "content---lab-docs-lab-2-ce-1-bc5": [() => import(/* webpackChunkName: "content---lab-docs-lab-2-ce-1-bc5" */ "@site/docs/Lab/02.mdx"), "@site/docs/Lab/02.mdx", require.resolveWeak("@site/docs/Lab/02.mdx")],
   "content---lab-docs-lab-33-d-1-c8d": [() => import(/* webpackChunkName: "content---lab-docs-lab-33-d-1-c8d" */ "@site/docs/Lab/03.mdx"), "@site/docs/Lab/03.mdx", require.resolveWeak("@site/docs/Lab/03.mdx")],

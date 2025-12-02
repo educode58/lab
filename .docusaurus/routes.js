@@ -114,15 +114,15 @@ export default [
   },
   {
     path: '/lab/docs',
-    component: ComponentCreator('/lab/docs', '623'),
+    component: ComponentCreator('/lab/docs', '1ba'),
     routes: [
       {
         path: '/lab/docs',
-        component: ComponentCreator('/lab/docs', 'c94'),
+        component: ComponentCreator('/lab/docs', '3bf'),
         routes: [
           {
             path: '/lab/docs',
-            component: ComponentCreator('/lab/docs', '276'),
+            component: ComponentCreator('/lab/docs', '03e'),
             routes: [
               {
                 path: '/lab/docs/category/laboratoare',
@@ -157,6 +157,12 @@ export default [
               {
                 path: '/lab/docs/lab/4',
                 component: ComponentCreator('/lab/docs/lab/4', 'd9f'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/lab/docs/lab/5',
+                component: ComponentCreator('/lab/docs/lab/5', '0bb'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

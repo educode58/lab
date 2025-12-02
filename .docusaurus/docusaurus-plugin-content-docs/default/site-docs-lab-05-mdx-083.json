@@ -1,0 +1,28 @@
+{
+  "id": "Lab/05",
+  "title": "L4 - Utilizarea sintaxei HTML5",
+  "description": "",
+  "source": "@site/docs/Lab/05.mdx",
+  "sourceDirName": "Lab",
+  "slug": "/lab/5",
+  "permalink": "/lab/docs/lab/5",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 26,
+  "frontMatter": {
+    "sidebar_position": 26,
+    "slug": "/lab/5",
+    "description": ""
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Laboratoare",
+    "permalink": "/lab/docs/category/laboratoare"
+  },
+  "next": {
+    "title": "L3 - Utilizarea contului de GitHub în VSCode",
+    "permalink": "/lab/docs/lab/4"
+  }
+}

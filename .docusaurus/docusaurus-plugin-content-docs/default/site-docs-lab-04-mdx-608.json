@@ -18,8 +18,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Laboratoare",
-    "permalink": "/lab/docs/category/laboratoare"
+    "title": "L4 - Utilizarea sintaxei HTML5",
+    "permalink": "/lab/docs/lab/5"
   },
   "next": {
     "title": "L2 - Primul proiect în Visual Studio Code",

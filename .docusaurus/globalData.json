@@ -36,6 +36,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Lab/05",
+              "path": "/lab/docs/lab/5",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "status",
               "path": "/lab/docs/status",
               "sidebar": "tutorialSidebar"

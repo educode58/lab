@@ -1,0 +1,340 @@
+---
+sidebar_position: 26
+slug: /lab/5
+description: ""
+---
+
+import Link from '@docusaurus/Link';
+
+# L4 - Utilizarea sintaxei HTML5
+
+---
+
+:::warning Conținutul laboratorului: 
+- *structura unui document HTML5*
+- *elemente de bază HTML5*
+- *crearea unei pagini web simple folosind HTML5*
+- *rularea paginii web în localhost*
+:::
+
+---
+
+## Structura unui document HTML5
+
+Un document HTML5 este format din următoarele elemente:
+
+- **DOCTYPE** – specifică tipul documentului
+- **html** – elementul rădăcină al documentului
+- **head** – conține informații despre document
+- **body** – conține conținutul documentului
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Titlul paginii</title>
+  </head>
+  <body>
+    <h1>Titlul paginii</h1>
+    <p>Paragraf de text.</p>
+  </body>
+</html>
+```
+
+## Elementele de bază HTML5
+
+
+- **h1** – titlu de nivel 1
+
+> Exemplu:
+```html
+<h1>Acesta este un titlu de nivel 1</h1>
+```
+> Afișează:
+> # Acesta este un titlu de nivel 1
+
+
+- **h2** – titlu de nivel 2
+> Exemplu:
+```html
+<h2>Acesta este un titlu de nivel 2</h2>
+```
+> Afișează:
+> ## Acesta este un titlu de nivel 2
+
+- **h3** – titlu de nivel 3
+> Exemplu:
+```html
+<h3>Acesta este un titlu de nivel 3</h3>
+```
+> Afișează:
+> ### Acesta este un titlu de nivel 3
+
+- **p** – paragraf de text
+> Exemplu:
+```html
+<p>Acesta este un paragraf de text.</p>
+```
+> Afișează:
+> Acesta este un paragraf de text.
+
+- **a** – link
+> Exemplu:
+```html
+<a href="https://www.google.com">Google</a>
+```
+> Afișează:
+> [Google](https://www.google.com)
+
+- **img** – imagine
+> Exemplu:
+```html
+<img src="imagine.jpg" alt="Imagine">
+```
+> Afișează:
+
+> ![Imagine](imagine.png)
+
+- **ul** – listă neordonată
+> Exemplu:
+```html
+<ul>
+  <li>Element 1</li>
+  <li>Element 2</li>
+  <li>Element 3</li>
+</ul>
+```
+> Afișează:
+> - Element 1
+> - Element 2
+> - Element 3
+
+- **ol** – listă ordonată
+> Exemplu:
+```html
+<ol>
+  <li>Element 1</li>
+  <li>Element 2</li>
+  <li>Element 3</li>
+</ol>
+```
+> Afișează:
+> 1. Element 1
+> 2. Element 2
+> 3. Element 3
+
+- **li** – element de listă
+
+- **tr** – rând de tabel
+- **td** – celulă de tabel
+- **th** – celulă de tabel cu text îngroșat
+
+- **table** – tabel
+> Exemplu:
+```html
+<table>
+  <tr>
+    <th>Antet 1</th>
+    <th>Antet 2</th>
+  </tr>
+  <tr>
+    <td>Celulă 1</td>
+    <td>Celulă 2</td>
+  </tr>
+</table>
+```
+> Afișează:
+> | Antet 1 | Antet 2 |
+> |---------|---------|
+> | Celulă 1 | Celulă 2 |
+
+
+- **input** – câmp de introducere
+> Exemplu:
+```html
+<input type="text" placeholder="Introduceți textul aici">
+```
+> Afișează:
+> <input type="text" placeholder="Introduceți textul aici" />
+
+
+- **button** – buton
+> Exemplu:
+```html
+<a href="https://www.google.com/" target="_blank">
+    <button>Open New Tab</button>
+</a>
+```
+> Afișează:
+<a href="https://www.google.com/" target="_blank">
+    <button>Open New Tab</button>
+</a>
+
+---
+
+:::danger Foarte Important
+Unele dintre cele mai utilizate și importante elemente HTML5 sunt:
+
+- **br** – salt de linie
+> Exemplu:
+```html
+<p>Linia 1<br>Linia 2</p>
+```
+> Afișează:
+
+<p>Linia 1</p>
+<br />
+<p>Linia 2</p>
+- **hr** – linie orizontală
+> Exemplu:
+```html
+<p>Text deasupra liniei</p>
+<hr>
+<p>Text dedesubtul liniei</p>
+```
+> Afișează:
+
+<p>Text deasupra liniei</p>
+<hr />
+<p>Text dedesubtul liniei</p>
+
+- **b** – text îngroșat
+> Exemplu:
+```html
+<p><b>Acesta este un text îngroșat.</b></p>
+```
+> Afișează:
+
+<p><b>Acesta este un text îngroșat.</b></p>
+
+- **i** – text italic
+> Exemplu:
+```html
+<p><i>Acesta este un text italic.</i></p>
+```
+> Afișează:
+
+<p><i>Acesta este un text italic.</i></p>
+- **u** – text subliniat
+> Exemplu:
+```html
+<p><u>Acesta este un text subliniat.</u></p>
+```
+> Afișează:
+
+<p><u>Acesta este un text subliniat.</u></p>
+
+- **s** – text tăiat
+> Exemplu:
+```html
+<p><s>Acesta este un text tăiat.</s></p>
+```
+> Afișează:
+
+<p><s>Acesta este un text tăiat.</s></p>
+
+- **sup** – text ca putere
+> Exemplu:
+```html
+<p>x<sup>3</sup></p>
+```
+> Afișează:
+
+<p>x<sup>3</sup></p>
+- **sub** – text ca indice
+> Exemplu:
+```html
+<p>H<sub>2</sub>O</p>
+```
+> Afișează:
+
+<p>H<sub>2</sub>O</p>
+
+:::
+
+---
+
+## Crearea unei pagini web simple folosind HTML5
+ETAPA 1. Crearea unui repository pe GitHub
+
+ETAPA 2. Clonarea repository-ului în VS Code
+
+ETAPA 3. Crearea unui fișier HTML
+
+ETAPA 4. Rularea în localhost
+
+ETAPA 5. Publicarea repository-ului pe GitHub folosind comenzile din terminal
+
+
+---
+
+## **1. Crearea unui repository pe GitHub**
+
+:::info Important
+Un repository este elementul cel mai important al GitHub. Este un loc unde poți stoca codul, fișierele și istoricul modificărilor fiecărui fișier. 
+
+Repository-urile pot avea mai mulți colaboratori și pot fi **publice**, **interne** sau **private**.
+:::
+
+1. Accesează: [https://github.com](https://github.com)
+2. Autentifică-te în contul tău.
+3. În dreapta sus, apasă pe **+** → **New repository**.
+4. Completează:
+
+   * **Repository name:** `laborator4`
+   * **Description:** „Al doilea proiect HTML” (opțional)
+   * Selectează **Public**
+   * Bifează **Add a README file**
+
+---
+
+## **2. Clonarea repository-ului în VS Code**
+
+1. Deschide VS Code.
+2. Apasă pe **Ctrl+Shift+P** pentru a deschide paleta de comenzi.
+3. Scrie **Git: Clone** și apasă **Enter**.
+4. Introdu adresa repository-ului
+
+: `https://github.com/numele-tau-de-utilizator/laborator3.git`
+5. Alege un folder local unde să fie clonat repository-ul.
+6. Apasă **Open** pentru a deschide repository-ul în VS Code.
+
+---
+
+## **3. Crearea unui fișier HTML**
+
+1. În VS Code, în partea stângă, apasă pe **Explorer**.
+2. Apasă pe **New File** (sau **Ctrl+N**).
+3. Salvează fișierul ca `index.html` (apasă **Ctrl+S**).
+4. Scrie codul HTML de mai jos:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al doilea meu site</title>
+</head>
+<body>
+    ## TODO: sterge aceasta linie și adaugă conținutul tău aici
+</body>
+</html>
+```
+
+---
+
+## LABORATOR: TODO List
+
+**TASK 1 (20 puncte)**: Crearea fișierului HTML (index.html) cu structura de bază și conținutul specificat mai sus.
+
+**TASK 2 (20 puncte)**: Pune un heading (`<h1>`) și un paragraf (`<p>`) în fișierul HTML. Titlul trebuie să fie "Bine ai venit!" iar paragraful "Acesta este primul meu site web.".
+
+**TASK 3 (20 puncte)**: Crearea unui tabel în fișierul HTML cu cel puțin 3 rânduri și 3 coloane. Fiecare celulă trebuie să conțină text descriptiv (de exemplu, "Celulă 1", "Celulă 2", etc.).
+
+**TASK 4 (20 puncte)**: Descarcă o imagine de pe internet și salveaz-o în folderul proiectului. Apoi, adaugă imaginea în fișierul HTML folosind elementul `<img>` cu atributele `src` și `alt`.
+
+**TASK 5 (20 puncte)**: Adăugarea unui buton în fișierul HTML care, atunci când este apăsat, deschide youtube.com într-o filă nouă a browser-ului.
+
+---
+
