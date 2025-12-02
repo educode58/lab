@@ -1,0 +1,28 @@
+{
+  "id": "Lab/02",
+  "title": "L1 - Configurarea Visual Studio Code cu GitHub",
+  "description": "",
+  "source": "@site/docs/Lab/02.mdx",
+  "sourceDirName": "Lab",
+  "slug": "/lab/2",
+  "permalink": "/lab/docs/lab/2",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 29,
+  "frontMatter": {
+    "sidebar_position": 29,
+    "slug": "/lab/2",
+    "description": ""
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "L2 - Primul proiect în Visual Studio Code",
+    "permalink": "/lab/docs/lab/3"
+  },
+  "next": {
+    "title": "L0 - Introducere în sistemele informatice",
+    "permalink": "/lab/docs/lab/1"
+  }
+}

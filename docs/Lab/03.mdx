@@ -1,0 +1,135 @@
+---
+sidebar_position: 28
+slug: /lab/3
+description: ""
+---
+
+# L2 - Primul proiect în Visual Studio Code
+
+---
+
+:::warning Conținutul laboratorului: 
+- *crearea unui repository GitHub*
+- *conectarea în VS Code*
+- *primul fișier HTML*
+- *rularea în localhost*
+:::
+
+---
+
+## **1. Crearea unui repository pe GitHub**
+
+:::info Important
+Un repository este elementul cel mai important al GitHub. Este un loc unde poți stoca codul, fișierele și istoricul modificărilor fiecărui fișier. 
+
+Repository-urile pot avea mai mulți colaboratori și pot fi **publice**, **interne** sau **private**.
+:::
+
+1. Accesează: [https://github.com](https://github.com)
+2. Autentifică-te în contul tău.
+3. În dreapta sus, apasă pe **+** → **New repository**.
+4. Completează:
+
+   * **Repository name:** `laborator2`
+   * **Description:** „Primul proiect HTML” (opțional)
+   * Selectează **Public**
+   * Bifează **Add a README file**
+5. Apasă **Create repository**.
+
+---
+
+## **2. Clonarea repository-ului în Visual Studio Code**
+
+### 2.1. Copierea linkului de clonare
+
+În pagina repository-ului:
+
+* Apasă butonul verde **Code**
+* Copiază linkul de tip **HTTPS**, de forma:
+
+  ```
+  https://github.com/numeutilizator/laborator2.git
+  ```
+
+### 2.2. Clonarea în VS Code
+
+1. Deschide Visual Studio Code.
+2. În bara laterală, apasă pe **Source Control**.
+3. Selectează **Clone Repository**.
+4. Alege un folder de pe calculator unde să fie descărcat proiectul.
+5. Când apare mesajul „Open the repository?”, selectează **Yes**.
+
+---
+
+## **3. Crearea fișierului HTML**
+
+1. În VS Code, în panoul din stânga (**Explorer**), apasă click dreapta → **New File**.
+2. Denumește fișierul: `index.html`.
+3. Adaugă următorul cod:
+
+```html
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Primul meu site</title>
+</head>
+<body>
+    <h1>Bun venit la laboratorul 2!</h1>
+    <p>Acesta este primul meu fișier HTML din Visual Studio Code.</p>
+</body>
+</html>
+```
+
+4. Salvează cu **Ctrl + S**.
+
+---
+
+## **4. Încărcarea modificărilor pe GitHub**
+
+1. Mergi la **Source Control** în VS Code.
+2. În câmpul *Message*, scrie:
+
+   ```
+   Adaugat index.html
+   ```
+3. Apasă **Commit**.
+4. Apasă **Sync Changes** sau **Push**.
+
+Acum fișierul este încărcat pe GitHub.
+
+---
+
+## **5. Vizualizarea site-ului în localhost**
+
+### 5.1. Metoda recomandată: Live Server
+
+#### a) Instalarea extensiei
+
+1. În VS Code, mergi la **Extensions**.
+2. Caută **Live Server**.
+3. Instalează extensia.
+
+#### b) Pornirea Live Server
+
+1. Deschide fișierul `index.html`.
+2. Click dreapta → **Open with Live Server**.
+3. Browserul se va deschide automat la adresa:
+
+   ```
+   http://127.0.0.1:5500/
+   ```
+
+---
+
+### 5.2. Metoda alternativă (fără server)
+
+* În Explorer, click dreapta pe `index.html` → **Reveal in File Explorer**.
+* Dublu click pe fișier pentru a-l deschide în browser.
+
+Aceasta nu pornește un server, dar permite verificarea rapidă a paginii.
+
+---
+
+
+

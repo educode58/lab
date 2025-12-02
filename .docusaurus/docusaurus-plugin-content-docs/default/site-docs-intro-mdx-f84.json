@@ -1,0 +1,26 @@
+{
+  "id": "intro",
+  "title": "Bun venit",
+  "description": "Bine ați venit la laboratorul de Informatică.",
+  "source": "@site/docs/intro.mdx",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/lab/docs/intro",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Status Website",
+    "permalink": "/lab/docs/status"
+  },
+  "next": {
+    "title": "Laboratoare",
+    "permalink": "/lab/docs/category/laboratoare"
+  }
+}

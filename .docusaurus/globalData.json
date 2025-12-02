@@ -1,0 +1,63 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/lab/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/lab/docs",
+          "mainDocId": "status",
+          "docs": [
+            {
+              "id": "intro",
+              "path": "/lab/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Lab/01",
+              "path": "/lab/docs/lab/1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Lab/02",
+              "path": "/lab/docs/lab/2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Lab/03",
+              "path": "/lab/docs/lab/3",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Lab/04",
+              "path": "/lab/docs/lab/4",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "status",
+              "path": "/lab/docs/status",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/laboratoare",
+              "path": "/lab/docs/category/laboratoare",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/lab/docs/status",
+                "label": "status"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

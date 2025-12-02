@@ -1,0 +1,248 @@
+---
+sidebar_position: 27
+slug: /lab/4
+description: ""
+---
+
+import Link from '@docusaurus/Link';
+
+# L3 - Utilizarea contului de GitHub în VSCode
+
+---
+
+:::warning Conținutul laboratorului: 
+- *crearea unui repository GitHub*
+- *clonarea în VS Code*
+- *crearea unui fișier HTML*
+- *crearea unui fișier CSS*
+- *rularea în localhost*
+- *publicarea repository-ului pe GitHub folosind comenzile din terminal*
+:::
+
+---
+# L3 – Utilizarea contului de GitHub în VSCode
+
+**Laborator practic – Web Development / Programare**
+
+---
+
+:::warning **Conținutul laboratorului**
+
+* *crearea unui repository GitHub*
+* *clonarea în VS Code*
+* *crearea unui fișier HTML*
+* *crearea unui fișier CSS*
+* *rularea în localhost*
+* *publicarea repository-ului pe GitHub folosind comenzile din terminal*
+  :::
+
+---
+
+## 1. Introducere
+
+În acest laborator vei învăța cum să folosești GitHub împreună cu Visual Studio Code pentru a dezvolta un mic proiect web. Vei parcurge tot fluxul de lucru necesar: configurarea unui repository, clonarea lui pe PC, crearea fișierelor web, rularea proiectului în localhost și publicarea modificărilor pe GitHub.
+
+Acesta este unul dintre cele mai utilizate fluxuri în dezvoltarea modernă — fie că lucrezi singur sau în echipă.
+
+---
+
+## 2. Crearea unui repository pe GitHub
+
+<img src="https://docs.github.com/assets/cb-29762/images/help/repository/repo-create-global-nav-update.png" alt="GitHub Logo" width="400" />
+
+<img src="https://github.blog/wp-content/uploads/2024/06/create-new-repository.gif" alt="GitHub Logo" width="400" />
+
+1. Autentifică-te în contul tău GitHub: **[https://github.com](https://github.com)**
+2. Click pe butonul **New repository** (sau **+ → New repository**).
+3. Completează:
+
+   * **Repository name:** `proiect-l3` (sau orice nume dorești)
+   * **Description:** opțional
+   * **Visibility:** **Public**
+4. Bifează opțiunea **Add a README file** (recomandat).
+5. Apasă **Create repository**.
+
+Repository-ul tău este acum creat și gata pentru a fi clonat în VS Code.
+
+---
+
+## 3. Clonarea repository-ului în VS Code
+
+<img src="https://learn.microsoft.com/en-us/azure/developer/javascript/media/how-to-clone-github-repo/visual-studio-code-show-git-output.png" alt="GitHub Logo" width="400" />
+
+<br />
+<img src="https://playbook.rcpch.tech/_assets/_images/git-walkthrough-imgs/git-workflow-diagram.svg" alt="GitHub Logo" width="600" />
+
+### Metoda 1 – Din GitHub
+
+1. În pagina repository-ului, apasă butonul **Code**.
+2. Copiază linkul HTTPS:
+
+   ```
+   https://github.com/username/proiect-l3.git
+   ```
+3. Deschide **VS Code**.
+4. Apasă **Ctrl + Shift + P** → scrie **Git: Clone**.
+5. Lipsește linkul copiat → alege un folder unde să clonezi.
+
+### Metoda 2 – Din terminalul VS Code
+
+Deschide terminalul din VS Code (**Ctrl + `**) și rulează:
+
+```bash
+git clone https://github.com/username/proiect-l3.git
+```
+
+După clonare, deschide folderul în VS Code.
+
+---
+
+## 4. Crearea fișierelor HTML și CSS
+
+În interiorul proiectului, creează două fișiere:
+
+### **index.html**
+
+```html
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Laborator L3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bun venit la laboratorul L3!</h1>
+    <p>Aceasta este prima ta pagină publicată prin GitHub + VSCode.</p>
+</body>
+</html>
+```
+
+### **style.css**
+
+```css
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    padding: 40px;
+}
+
+h1 {
+    color: #2d6cdf;
+}
+```
+
+---
+
+## 5. Rularea proiectului în localhost
+
+Există două metode practice.
+
+### **Metoda 1 – Folosind extensia „Live Server”**
+
+1. În VS Code → **Extensions**.
+2. Caută **Live Server** → Install.
+3. În `index.html` → click dreapta → **Open with Live Server**.
+
+Site-ul va fi accesibil pe:
+
+```
+http://127.0.0.1:5500
+```
+
+### **Metoda 2 – Simplă, fără extensie**
+
+Deschide manual `index.html` în browser.
+*Nu oferă reîncărcare automată, dar funcționează.*
+
+---
+
+## 6. Publicarea pe GitHub prin terminal
+
+Asigură-te că ești în folderul proiectului. Execută comenzi:
+
+```bash
+git status
+```
+
+→ îți arată ce fișiere sunt modificate.
+
+```bash
+git add .
+```
+
+→ adaugă toate fișierele în staging.
+
+```bash
+git commit -m "Prima versiune a proiectului L3"
+```
+
+→ creează un commit.
+
+```bash
+git push
+```
+
+→ trimite schimbările pe GitHub.
+
+Dacă totul a fost configurat corect, repository-ul tău online va fi actualizat instant.
+
+---
+
+## 7. Concluzii
+
+În cadrul acestui laborator ai realizat un flux complet de lucru GitHub + VSCode:
+
+* ai creat un repository
+* l-ai clonat pe calculator
+* ai creat fișiere HTML și CSS
+* ai rulat proiectul local
+* ai publicat modificările pe GitHub
+
+Aceste etape reprezintă baza lucrului profesionist în dezvoltarea web și îți vor fi utile în toate laboratoarele viitoare.
+
+Dacă vrei, pot genera și **fișierele complete ale proiectului**, un **README.md** profesionist sau o **variantă extinsă a cursului**.
+
+---
+
+## 8. Erori posibile la git push – lipsește email sau numele de utilizator Git
+
+Dacă la comanda:
+
+```git push```
+
+
+> primești un mesaj de forma:
+
+```*** Please tell me who you are.```
+```Run```
+
+  ```git config --global user.email "you@example.com"```
+  ```git config --global user.name "Your Name"```
+
+```to set your account's default identity.```
+```fatal: unable to auto-detect email address```
+
+
+> înseamnă că Git nu are configurate datele tale de utilizator.
+
+## Soluția – Configurarea numelui și emailului în Git
+
+Rulează, pe rând:
+
+```git config --global user.name "Numele tău de pe GitHub"```
+
+```git config --global user.email "emailul_tău_de_github@example.com"```
+
+
+**Poți verifica dacă s-au configurat corect:**
+
+```git config --global --list```
+
+
+> Ar trebui să apară:
+
+```user.name=Numele tău```
+```user.email=emailul_tău```
+
+---

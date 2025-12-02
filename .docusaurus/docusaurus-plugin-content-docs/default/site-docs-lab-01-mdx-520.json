@@ -1,0 +1,24 @@
+{
+  "id": "Lab/01",
+  "title": "L0 - Introducere în sistemele informatice",
+  "description": "",
+  "source": "@site/docs/Lab/01.mdx",
+  "sourceDirName": "Lab",
+  "slug": "/lab/1",
+  "permalink": "/lab/docs/lab/1",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 30,
+  "frontMatter": {
+    "sidebar_position": 30,
+    "slug": "/lab/1",
+    "description": ""
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "L1 - Configurarea Visual Studio Code cu GitHub",
+    "permalink": "/lab/docs/lab/2"
+  }
+}
