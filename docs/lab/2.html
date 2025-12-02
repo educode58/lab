@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Lab/02" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">L1 - Configurarea Visual Studio Code cu GitHub | Educode58</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://educode58.github.io/lab/img/logo.png"><meta data-rh="true" name="twitter:image" content="https://educode58.github.io/lab/img/logo.png"><meta data-rh="true" property="og:url" content="https://educode58.github.io/lab/docs/lab/2"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="L1 - Configurarea Visual Studio Code cu GitHub | Educode58"><link data-rh="true" rel="icon" href="/lab/img/logo.png"><link data-rh="true" rel="canonical" href="https://educode58.github.io/lab/docs/lab/2"><link data-rh="true" rel="alternate" href="https://educode58.github.io/lab/docs/lab/2" hreflang="en"><link data-rh="true" rel="alternate" href="https://educode58.github.io/lab/docs/lab/2" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/lab/blog/rss.xml" title="Educode58 RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/lab/blog/atom.xml" title="Educode58 Atom Feed">
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" crossorigin="anonymous">
+<script src="/status.js"></script><link rel="stylesheet" href="/lab/assets/css/styles.d1455012.css">
+<script src="/lab/assets/js/runtime~main.d392d9ca.js" defer="defer"></script>
+<script src="/lab/assets/js/main.19b83e11.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/lab/img/logo.png"><link rel="preload" as="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/VS_Code_%28Insiders%29.png/1024px-VS_Code_%28Insiders%29.png"><link rel="preload" as="image" href="https://images.ctfassets.net/8aevphvgewt8/5fErhOtgvjrf97d7wOoARB/b262e06c615977f33046c468147aa114/screenshot-windows-dark.png?w=1248&amp;fm=webp&amp;q=90"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/lab/"><div class="navbar__logo"><img src="/lab/img/logo.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/lab/img/logo.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Educode58</b></a><a class="navbar__item navbar__link" href="/lab/docs/category/laboratoare">Laboratoare</a></div><div class="navbar__items navbar__items--right"><div class="navbar__item">
+            <span style="font-size: 0.9rem; opacity: 0.7;">Ultima actualizare: 02.12.2025, 10:34</span>
+          </div><div class="navbar__item">
+            <div id="site-status" data-status="stable" style="display: flex;
+              align-items: center;
+              gap: 10px;
+              padding: 6px 12px;
+              border-left: 5px solid #27ae60;
+              border-radius: 6px;
+              background-color: #d5f4e6;
+              color: #27ae60;
+              font-size: 0.9rem;
+              font-family: sans-serif;
+              cursor: pointer;" onclick='window.location.href="/lab/docs/status"'>
+              <svg viewBox="0 0 16 16" width="18" height="18" xmlns="http://www.w3.org/2000/svg" fill="#27ae60">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+              </svg>
+              <span style="font-weight: 600;">Mod Stabil</span>
+            </div>
+          </div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_eExm"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a href="https://edumat58.github.io/lab" target="_blank" rel="noopener noreferrer" class="menu__link menuExternalLink_NmtK">Edumat58 - Portal digital de Matematică<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/lab/docs/status">Status Website</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/lab/docs/intro">Bun venit</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/lab/docs/category/laboratoare">Laboratoare</a><button aria-label="Collapse sidebar category &#x27;Laboratoare&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/lab/docs/lab/4">L3 - Utilizarea contului de GitHub în VSCode</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/lab/docs/lab/3">L2 - Primul proiect în Visual Studio Code</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/lab/docs/lab/2">L1 - Configurarea Visual Studio Code cu GitHub</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/lab/docs/lab/1">L0 - Introducere în sistemele informatice</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/lab/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/lab/docs/category/laboratoare"><span itemprop="name">Laboratoare</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">L1 - Configurarea Visual Studio Code cu GitHub</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>L1 - Configurarea Visual Studio Code cu GitHub</h1></header>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ce-este-visual-studio-code">Ce este Visual Studio Code?<a href="#ce-este-visual-studio-code" class="hash-link" aria-label="Direct link to Ce este Visual Studio Code?" title="Direct link to Ce este Visual Studio Code?">​</a></h2>
+<div class="theme-admonition theme-admonition-tip admonition_Gfwi alert alert--success"><div class="admonitionHeading_f1Ed"><span class="admonitionIcon_kpSf"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Prezentare VS Code</div><div class="admonitionContent_UjKb"><p>Visual Studio Code este un program gratuit care te ajută să scrii cod pentru site-uri web, jocuri sau aplicații. Este ca un caiet magic unde poți scrie și testa idei.</p><p><strong>Visual Studio Code</strong> (denumit VS Code ) este un editor de cod sursă dezvoltat de <strong>Microsoft</strong> pentru Windows, Linux, macOS și browsere web . Caracteristicile includ suport pentru depanare, evidențierea sintaxei, completarea inteligentă a codului, fragmente de cod, refactorizarea codului și controlul versiunilor încorporat cu Git. Utilizatorii pot schimba tema, comenzile rapide de la tastatură și preferințele.</p></div></div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/VS_Code_%28Insiders%29.png/1024px-VS_Code_%28Insiders%29.png" alt="Visual Studio Code">
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ce-este-github">Ce este GitHub?<a href="#ce-este-github" class="hash-link" aria-label="Direct link to Ce este GitHub?" title="Direct link to Ce este GitHub?">​</a></h2>
+<div class="theme-admonition theme-admonition-tip admonition_Gfwi alert alert--success"><div class="admonitionHeading_f1Ed"><span class="admonitionIcon_kpSf"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Prezentare Github</div><div class="admonitionContent_UjKb"><p>GitHub este un loc pe internet unde poți salva proiectele tale de cod. Este ca un dulap mare unde poți păstra lucrurile tale și să le împărtășești cu alții. Folosește Git pentru a ține evidența schimbărilor.</p><p><a href="https://github.com/" target="_blank" rel="noopener noreferrer">https://github.com/</a></p></div></div>
+<img src="https://images.ctfassets.net/8aevphvgewt8/5fErhOtgvjrf97d7wOoARB/b262e06c615977f33046c468147aa114/screenshot-windows-dark.png?w=1248&amp;fm=webp&amp;q=90">
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pasul-1-instalează-visual-studio-code">Pasul 1: Instalează Visual Studio Code<a href="#pasul-1-instalează-visual-studio-code" class="hash-link" aria-label="Direct link to Pasul 1: Instalează Visual Studio Code" title="Direct link to Pasul 1: Instalează Visual Studio Code">​</a></h2>
+<ol>
+<li>
+<p>Deschide browser-ul tău (cum ar fi Google Chrome sau Edge).</p>
+</li>
+<li>
+<p>Mergi la site-ul oficial: <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">code.visualstudio.com</a>.</p>
+</li>
+<li>
+<p>Apasă pe butonul &quot;Download for Windows&quot;. Va descărca un fișier numit &quot;VSCodeUserSetup-x64-1.xx.x.exe&quot; (numărul poate fi diferit).</p>
+</li>
+<li>
+<p>După descărcare, dă dublu-click pe fișier și urmează instrucțiunile:</p>
+<ul>
+<li>Acceptă termenii.</li>
+<li>Alege unde să instaleze (lasă implicit).</li>
+<li>Apasă &quot;Next&quot; și &quot;Install&quot;.</li>
+</ul>
+</li>
+<li>
+<p>Când se termină, apasă &quot;Finish&quot;. VS Code se va deschide automat.</p>
+</li>
+</ol>
+<blockquote>
+<p>Felicitări! Ai instalat VS Code.</p>
+</blockquote>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pasul-2-instalează-git">Pasul 2: Instalează Git<a href="#pasul-2-instalează-git" class="hash-link" aria-label="Direct link to Pasul 2: Instalează Git" title="Direct link to Pasul 2: Instalează Git">​</a></h2>
+<p>Git este programul care lucrează cu GitHub.</p>
+<ol>
+<li>
+<p>Mergi la <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">git-scm.com</a>.</p>
+</li>
+<li>
+<p>Apasă &quot;Download for Windows&quot;.</p>
+</li>
+<li>
+<p>Descarcă versiunea pentru 64-bit.</p>
+</li>
+<li>
+<p>Rulează installer-ul și urmează pașii:</p>
+<ul>
+<li>Acceptă licența.</li>
+<li>Alege componentele (lasă implicit).</li>
+<li>Alege editorul (recomandăm VS Code).</li>
+<li>Restul lasă implicit și apasă &quot;Install&quot;.</li>
+</ul>
+</li>
+<li>
+<p>Când se termină, deschide Command Prompt (caută &quot;cmd&quot; în meniu Start) și scrie <code>git --version</code>. Dacă vezi un număr, e bine.</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pasul-3-creează-un-cont-github">Pasul 3: Creează un cont GitHub<a href="#pasul-3-creează-un-cont-github" class="hash-link" aria-label="Direct link to Pasul 3: Creează un cont GitHub" title="Direct link to Pasul 3: Creează un cont GitHub">​</a></h2>
+<ol>
+<li>
+<p>Mergi la <a href="https://github.com/" target="_blank" rel="noopener noreferrer">github.com</a>.</p>
+</li>
+<li>
+<p>Apasă &quot;Sign up&quot; și creează un cont gratuit. Alege un nume de utilizator simplu.</p>
+</li>
+<li>
+<p>Verifică email-ul tău pentru a confirma contul.</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pasul-4-creează-primul-repository">Pasul 4: Creează primul Repository<a href="#pasul-4-creează-primul-repository" class="hash-link" aria-label="Direct link to Pasul 4: Creează primul Repository" title="Direct link to Pasul 4: Creează primul Repository">​</a></h2>
+<div class="theme-admonition theme-admonition-info admonition_Gfwi alert alert--info"><div class="admonitionHeading_f1Ed"><span class="admonitionIcon_kpSf"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Important</div><div class="admonitionContent_UjKb"><p>Un repository este elementul cel mai important al GitHub. Este un loc unde poți stoca codul, fișierele și istoricul modificărilor fiecărui fișier.</p><p>Repository-urile pot avea mai mulți colaboratori și pot fi <strong>publice</strong>, <strong>interne</strong> sau <strong>private</strong>.</p></div></div>
+<ol start="2">
+<li>
+<p>În dreapta sus, apasă pe <strong>+</strong> → <strong>New repository</strong>.</p>
+</li>
+<li>
+<p>Completează:</p>
+<ul>
+<li><strong>Repository name:</strong> <code>laborator1</code></li>
+<li><strong>Description:</strong> „Primul meu repository” (opțional)</li>
+<li>Selectează <strong>Public</strong></li>
+<li>Bifează <strong>Add a README file</strong></li>
+</ul>
+</li>
+<li>
+<p>Apasă <strong>Create repository</strong>.</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pasul-5-configurează-vs-code-cu-github">Pasul 5: Configurează VS Code cu GitHub<a href="#pasul-5-configurează-vs-code-cu-github" class="hash-link" aria-label="Direct link to Pasul 5: Configurează VS Code cu GitHub" title="Direct link to Pasul 5: Configurează VS Code cu GitHub">​</a></h2>
+<ol>
+<li>
+<p>Deschide VS Code.</p>
+</li>
+<li>
+<p>Instalează extensia GitHub:</p>
+<ul>
+<li>Apasă pe iconița Extensions (pătratul cu linii) din stânga.</li>
+<li>Caută &quot;GitHub&quot; și instalează &quot;GitHub Pull Requests and Issues&quot; de la GitHub.</li>
+</ul>
+</li>
+<li>
+<p>Conectează-te la GitHub:</p>
+<ul>
+<li>Apasă Ctrl+Shift+P (sau Cmd+Shift+P pe Mac, dar tu ai Windows).</li>
+<li>Scrie &quot;GitHub: Sign in&quot; și apasă Enter.</li>
+<li>Urmează pașii pentru a te conecta cu contul tău GitHub.</li>
+</ul>
+</li>
+</ol>
+<hr></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="margin-top--sm theme-doc-footer-edit-meta-row" style="font-size:0.75rem;font-weight:bold;text-align:left;opacity:0.2;letter-spacing:0.10em">© Proprietate intelectuala Educode58</div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/lab/docs/lab/3"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">L2 - Primul proiect în Visual Studio Code</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/lab/docs/lab/1"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">L0 - Introducere în sistemele informatice</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#ce-este-visual-studio-code" class="table-of-contents__link toc-highlight">Ce este Visual Studio Code?</a></li><li><a href="#ce-este-github" class="table-of-contents__link toc-highlight">Ce este GitHub?</a></li><li><a href="#pasul-1-instalează-visual-studio-code" class="table-of-contents__link toc-highlight">Pasul 1: Instalează Visual Studio Code</a></li><li><a href="#pasul-2-instalează-git" class="table-of-contents__link toc-highlight">Pasul 2: Instalează Git</a></li><li><a href="#pasul-3-creează-un-cont-github" class="table-of-contents__link toc-highlight">Pasul 3: Creează un cont GitHub</a></li><li><a href="#pasul-4-creează-primul-repository" class="table-of-contents__link toc-highlight">Pasul 4: Creează primul Repository</a></li><li><a href="#pasul-5-configurează-vs-code-cu-github" class="table-of-contents__link toc-highlight">Pasul 5: Configurează VS Code cu GitHub</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Mai multe</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Educode58</div></div></div></footer></div>
+</body>
+</html>
