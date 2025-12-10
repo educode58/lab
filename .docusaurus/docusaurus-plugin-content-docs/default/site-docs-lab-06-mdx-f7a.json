@@ -1,0 +1,28 @@
+{
+  "id": "Lab/06",
+  "title": "L6 - Atribute HTML",
+  "description": "",
+  "source": "@site/docs/Lab/06.mdx",
+  "sourceDirName": "Lab",
+  "slug": "/lab/6",
+  "permalink": "/lab/docs/lab/6",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 25,
+  "frontMatter": {
+    "sidebar_position": 25,
+    "slug": "/lab/6",
+    "description": ""
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Laboratoare",
+    "permalink": "/lab/docs/category/laboratoare"
+  },
+  "next": {
+    "title": "L4 - Utilizarea sintaxei HTML5",
+    "permalink": "/lab/docs/lab/5"
+  }
+}

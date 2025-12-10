@@ -1,0 +1,319 @@
+---
+sidebar_position: 25
+slug: /lab/6
+description: ""
+---
+
+# L6 - Atribute HTML
+
+---
+
+## Ce sunt atributele HTML?
+
+Atributele HTML oferă informații suplimentare despre elementele HTML.
+
+---
+
+### Reguli generale pentru atribute
+
+- Toate elementele HTML pot avea **atribute**
+- Atributele oferă **informații suplimentare**
+- Ele sunt **scrise întotdeauna în tag-ul de început**
+- De obicei apar sub forma:  
+  **nume="valoare"**
+
+---
+
+## Atributul `href`
+
+Tag-ul `<a>` definește un **link (hiperlegătură)**.  
+Atributul `href` specifică **adresa URL** către care duce link-ul.
+
+### Exemplu:
+```html
+<a href="https://www.w3schools.com">Vizitează W3Schools</a>
+````
+
+---
+
+## Atributul `src`
+
+Tag-ul `<img>` este folosit pentru a afișa o imagine într-o pagină HTML.
+Atributul `src` specifică **calea către imagine**.
+
+### Exemplu:
+
+```html
+<img src="img_girl.jpg">
+```
+
+---
+
+### Tipuri de URL-uri pentru `src`
+
+#### URL absolut
+
+Face legătura către o imagine de pe alt site:
+
+```html
+<img src="https://www.w3schools.com/images/img_girl.jpg">
+```
+
+---
+
+#### URL relativ
+
+Face legătura către o imagine din site-ul tău:
+
+```html
+<img src="img_girl.jpg">
+<img src="/images/img_girl.jpg">
+```
+
+---
+
+## Atributele `width` și `height`
+
+Aceste atribute definesc **lățimea și înălțimea imaginii (în pixeli)**.
+
+### Exemplu:
+
+```html
+<img src="img_girl.jpg" width="500" height="600">
+```
+
+---
+
+## Atributul `alt`
+
+Atributul `alt` afișează un **text alternativ** dacă imaginea nu poate fi încărcată.
+
+### Exemplu:
+
+```html
+<img src="img_girl.jpg" alt="Fată cu jachetă">
+```
+
+### Exemplu cu imagine lipsă:
+
+```html
+<img src="img_typo.jpg" alt="Fată cu jachetă">
+```
+
+---
+
+## Atributul `style`
+
+Permite adăugarea de stiluri direct pe element (culoare, font, mărime etc.).
+
+### Exemplu:
+
+```html
+<p style="color:red;">Acesta este un paragraf roșu.</p>
+```
+
+---
+
+## Atributul `lang`
+
+Se adaugă în tag-ul `<html>` și specifică **limba paginii web**.
+
+### Exemplu:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+</body>
+</html>
+```
+
+### Limbă + țară:
+
+```html
+<html lang="en-US">
+```
+
+---
+
+## Atributul `title`
+
+Afișează un **tooltip** când duci mouse-ul peste element.
+
+### Exemplu:
+
+```html
+<p title="Sunt un tooltip">Acesta este un paragraf.</p>
+```
+
+---
+
+## Recomandări W3C
+
+### Folosește mereu litere mici
+
+>Corect:
+
+```html
+<p title="Exemplu">
+```
+
+>Greșit:
+
+```html
+<p TITLE="Exemplu">
+```
+
+---
+
+### Pune mereu valorile în ghilimele
+
+> Corect:
+
+```html
+<a href="https://www.w3schools.com/html/">Tutorial HTML</a>
+```
+
+> Greșit:
+
+```html
+<a href=https://www.w3schools.com/html/>Tutorial HTML</a>
+```
+
+---
+
+### Caz în care ghilimelele sunt OBLIGATORII
+
+>Greșit:
+
+```html
+<p title=Descriere W3Schools>
+```
+
+> Corect:
+
+```html
+<p title="Descriere W3Schools">
+```
+
+---
+
+## LABORATOR (NU se modifică structura)
+
+> Copiați snippet-ul de mai jos într-un fișier nou `.html` și completați rândurile marcate cu `TODO` conform cerințelor fiecărui exercițiu.
+
+```html
+<!DOCTYPE html>
+<html TODO>
+<head>
+  <title>Laborator HTML</title>
+</head>
+<body>
+
+  <h1>Laborator Atribute HTML</h1>
+
+  <!-- EXERCITIUL 1 -->
+  <a TODO>Vizitează W3Schools</a>
+
+  <br><br>
+
+  <!-- EXERCITIUL 2 -->
+  <img TODO>
+
+  <br><br>
+
+  <!-- EXERCITIUL 3 -->
+  <img src="peisaj.jpg" TODO>
+
+  <br><br>
+
+  <!-- EXERCITIUL 4 -->
+  <img src="masina.jpg" TODO>
+
+  <br><br>
+
+  <!-- EXERCITIUL 5 -->
+  <p TODO>Acesta este un paragraf informativ.</p>
+
+</body>
+</html>
+````
+
+---
+
+### EXERCIȚIUL 1 – Atributul `href` (20 puncte)
+
+Completează **doar acest rând**:
+
+```html
+<a TODO>Vizitează W3Schools</a>
+```
+
+> Cerință:
+
+* Adaugă atributul `href`
+* Link către: `https://www.w3schools.com`
+
+---
+
+### EXERCIȚIUL 2 – Atributul `src` (20 puncte)
+
+Completează **doar acest rând**:
+
+```html
+<img TODO>
+```
+
+> Cerință:
+
+* Folosește atributul `src`
+* Imaginea se numește `logo.png`
+* Imaginea este în același folder cu fișierul HTML
+
+---
+
+### EXERCIȚIUL 3 – Atributele `width` și `height` (20 puncte)
+
+Completează **doar acest rând**:
+
+```html
+<img src="peisaj.jpg" TODO>
+```
+
+> Cerință:
+
+* Lățime: **300**
+* Înălțime: **200**
+
+---
+
+### EXERCIȚIUL 4 – Atributul `alt` (20 puncte)
+
+Completează **doar acest rând**:
+
+```html
+<img src="masina.jpg" TODO>
+```
+
+> Cerință:
+
+* Atribut `alt`
+* Text: **"Mașină sport roșie"**
+
+---
+
+### EXERCIȚIUL 5 – Atributele `title` și `style` (20 puncte)
+
+Completează **doar acest rând**:
+
+```html
+<p TODO>Acesta este un paragraf informativ.</p>
+```
+
+> Cerință:
+
+* Culoare text: **albastru**
+* Tooltip la hover: **"Paragraf explicativ"**
+
+---
+

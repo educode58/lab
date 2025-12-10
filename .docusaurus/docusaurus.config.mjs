@@ -323,7 +323,7 @@ export default {
       ]
     },
     "mdxComponents": {
-      "Image": "/Users/asbri/lab/src/components/Image.jsx"
+      "Image": "/Users/asbri/GitHub/lab/src/components/Image.jsx"
     },
     "colorMode": {
       "defaultMode": "light",

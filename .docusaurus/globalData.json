@@ -16,6 +16,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Lab/00",
+              "path": "/lab/docs/lab/0",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Lab/01",
               "path": "/lab/docs/lab/1",
               "sidebar": "tutorialSidebar"
@@ -38,6 +43,11 @@
             {
               "id": "Lab/05",
               "path": "/lab/docs/lab/5",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Lab/06",
+              "path": "/lab/docs/lab/6",
               "sidebar": "tutorialSidebar"
             },
             {

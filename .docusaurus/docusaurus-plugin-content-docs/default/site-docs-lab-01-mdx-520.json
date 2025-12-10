@@ -20,5 +20,9 @@
   "previous": {
     "title": "L1 - Configurarea Visual Studio Code cu GitHub",
     "permalink": "/lab/docs/lab/2"
+  },
+  "next": {
+    "title": "Note Laborator",
+    "permalink": "/lab/docs/lab/0"
   }
 }
