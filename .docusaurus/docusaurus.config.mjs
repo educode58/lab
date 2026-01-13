@@ -93,7 +93,7 @@ export default {
         {
           "type": "html",
           "position": "right",
-          "value": "\n            <span style=\"font-size: 0.9rem; opacity: 0.7;\">Ultima actualizare: 02.12.2025, 11:08</span>\n          "
+          "value": "\n            <span style=\"font-size: 0.9rem; opacity: 0.7;\">Ultima actualizare: 11.12.2025, 15:12</span>\n          "
         },
         {
           "type": "html",
